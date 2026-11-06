@@ -57,3 +57,30 @@ Writing objects: 100% (13/13), 308.20 KiB | 30.82 MiB/s, done.
 Total 13 (delta 2), reused 0 (delta 0), pack-reused 0
 To https://github.com/nejjtre/AndroidStudio-Aplicaciones-Moviles.git
    c1b316e..1fd0047  Dh-Alexander -> Dh-Alexander
+
+5. $ git commit -m "Quinto commit: Agregando bitácora del proyecto"
+PC-31@PC-31 MINGW64 ~/Downloads/GuiaTuristicaAndroid/GuiaTuristica (Dh-Alexander)
+$ git pull origin Dh-Alexander
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1.34 KiB | 76.00 KiB/s, done.
+From https://github.com/nejjtre/AndroidStudio-Aplicaciones-Moviles
+ * branch            Dh-Alexander -> FETCH_HEAD
+   1fd0047..8e54afe  Dh-Alexander -> origin/Dh-Alexander
+Merge made by the 'ort' strategy.
+ README.md | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+
+PC-31@PC-31 MINGW64 ~/Downloads/GuiaTuristicaAndroid/GuiaTuristica (Dh-Alexander)
+$ git push origin Dh-Alexander
+Enumerating objects: 13, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 28 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.96 KiB | 1.96 MiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/nejjtre/AndroidStudio-Aplicaciones-Moviles.git
+   8e54afe..dcdf722  Dh-Alexander -> Dh-Alexander
