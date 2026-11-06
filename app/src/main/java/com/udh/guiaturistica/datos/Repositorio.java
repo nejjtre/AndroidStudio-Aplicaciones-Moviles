@@ -30,6 +30,9 @@ public class Repositorio {
         lugares.add(new Lugar(nuevoId(), "Cueva de las Lechuzas",
                 "Cueva natural en el Parque Nacional Tingo María.", "Natural", 8, 17,
                 foto(R.drawable.cueva_de_las_lechuzas)));
+        lugares.add(new Lugar(nuevoId(), "Condor",
+                "Condor Tallado y pintado por artesanos y artistas huanuqueños.", "Cultural", 8, 17,
+                foto(R.drawable.condor)));
     }
 
     private String foto(int idImagen) {
