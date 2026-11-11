@@ -10,7 +10,7 @@ public class Usuario {
     private String clave;
     private String rol;
 
-    public Usuario(String nombre, String correo, String clave, String rol) {
+    public Usuario(String nombre, String correo, String clave) {
         this.nombre = nombre;
         this.correo = correo;
         this.clave = clave;
