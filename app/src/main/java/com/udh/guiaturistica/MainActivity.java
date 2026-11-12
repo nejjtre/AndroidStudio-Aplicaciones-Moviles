@@ -8,9 +8,10 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.udh.guiaturistica.R;
+import com.udh.guiaturistica.controller.AcercaDeActivity;
+import com.udh.guiaturistica.controller.AyudaActivity;
+import com.udh.guiaturistica.controller.DetalleActivity;
 
-// Pantalla principal: punto de partida de la navegación
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,13 +19,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnDetalle = findViewById(R.id.btnDetalle);
-        btnDetalle.setOnClickListener(v -> {
-            // Intent explícito con putExtra: envía un dato a la otra pantalla
-            Intent intent = new Intent(this, DetalleActivity.class);
-            intent.putExtra("titulo", getString(R.string.titulo_detalle_ejemplo));
-            startActivity(intent);
-        });
+        Button btnLugaresTuristicos = findViewById(R.id.btnLugaresTuristicos);
+        Button btnLugaresGastronomicos = findViewById(R.id.btnLugaresGastronomicos);
+        Button btnLugaresNaturales = findViewById(R.id.btnLugaresNaturales);
+
+        btnLugaresTuristicos.setOnClickListener(v -> abrirPantalla(getString(R.string.titulo_lugares_turisticos)));
+        btnLugaresGastronomicos.setOnClickListener(v -> abrirPantalla(getString(R.string.titulo_lugares_gastronomicos)));
+        btnLugaresNaturales.setOnClickListener(v -> abrirPantalla(getString(R.string.titulo_lugares_naturales)));
+    }
+
+    private void abrirPantalla(String titulo) {
+        Intent intent = new Intent(this, DetalleActivity.class);
+        intent.putExtra("titulo", titulo);
+        startActivity(intent);
     }
 
     @Override

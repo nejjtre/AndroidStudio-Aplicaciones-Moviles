@@ -14,9 +14,23 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btnDetalle"
+        android:id="@+id/btnLugaresTuristicos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/btn_ver_detalle" />
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_ver_lugares_turisticos" />
+
+    <Button
+        android:id="@+id/btnLugaresGastronomicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/btn_ver_lugares_gastronomicos" />
+
+    <Button
+        android:id="@+id/btnLugaresNaturales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/btn_ver_lugares_naturales" />
 </LinearLayout>

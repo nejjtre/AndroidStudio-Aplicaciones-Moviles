@@ -22,7 +22,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".AgregarLugarActivity" />
-        <activity android:name=".DetalleLugarActivity" />
+        <activity android:name=".controller.DetalleActivity" />
+        <activity android:name=".controller.AcercaDeActivity" />
+        <activity android:name=".controller.AyudaActivity" />
     </application>
 </manifest>

@@ -9,7 +9,12 @@
     <string name="menu_acerca_de">Acerca de</string>
     <string name="menu_ayuda">Ayuda</string>
     <string name="titulo_principal">Guía Turística Huánuco</string>
-    <string name="btn_ver_detalle">Ver Detalle</string>
+    <string name="btn_ver_lugares_turisticos">Ver lugares turísticos</string>
+    <string name="btn_ver_lugares_gastronomicos">Ver lugares gastronómicos</string>
+    <string name="btn_ver_lugares_naturales">Ver lugar natural</string>
+    <string name="titulo_lugares_turisticos">Lugares Turísticos</string>
+    <string name="titulo_lugares_gastronomicos">Lugares Gastronómicos</string>
+    <string name="titulo_lugares_naturales">Lugares Naturales</string>
     <string name="titulo_login">Iniciar Sesión</string>
     <string name="hint_correo">Correo electrónico</string>
     <string name="hint_clave">Contraseña</string>
