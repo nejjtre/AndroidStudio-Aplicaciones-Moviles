@@ -25,5 +25,6 @@
         <activity android:name=".controller.DetalleActivity" />
         <activity android:name=".controller.AcercaDeActivity" />
         <activity android:name=".controller.AyudaActivity" />
+        <activity android:name=".controller.LugaresTuristicosActivity" />
     </application>
 </manifest>
