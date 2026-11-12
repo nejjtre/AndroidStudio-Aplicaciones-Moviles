@@ -1,11 +1,11 @@
 package com.udh.guiaturistica.modelo;
 
-public class LugarTuristico {
+public class LugarItem {
     private final String nombre;
     private final String descripcion;
     private final int imagenResId;
 
-    public LugarTuristico(String nombre, String descripcion, int imagenResId) {
+    public LugarItem(String nombre, String descripcion, int imagenResId) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.imagenResId = imagenResId;

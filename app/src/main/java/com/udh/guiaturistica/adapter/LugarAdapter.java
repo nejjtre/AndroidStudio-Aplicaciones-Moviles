@@ -10,15 +10,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.udh.guiaturistica.R;
-import com.udh.guiaturistica.modelo.LugarTuristico;
+import com.udh.guiaturistica.modelo.LugarItem;
 
 import java.util.List;
 
-public class LugarTuristicoAdapter extends RecyclerView.Adapter<LugarTuristicoAdapter.ViewHolder> {
+public class LugarAdapter extends RecyclerView.Adapter<LugarAdapter.ViewHolder> {
 
-    private final List<LugarTuristico> listaLugares;
+    private final List<LugarItem> listaLugares;
 
-    public LugarTuristicoAdapter(List<LugarTuristico> listaLugares) {
+    public LugarAdapter(List<LugarItem> listaLugares) {
         this.listaLugares = listaLugares;
     }
 
@@ -32,7 +32,7 @@ public class LugarTuristicoAdapter extends RecyclerView.Adapter<LugarTuristicoAd
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        LugarTuristico lugar = listaLugares.get(position);
+        LugarItem lugar = listaLugares.get(position);
         holder.tvNombre.setText(lugar.getNombre());
         holder.tvDescripcion.setText(lugar.getDescripcion());
         holder.ivImagen.setImageResource(lugar.getImagenResId());
