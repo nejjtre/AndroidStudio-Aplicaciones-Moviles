@@ -1,4 +1,4 @@
-package com.udh.guiaturistica.controller;
+package com.udh.guiaturistica;
 
 import android.content.Intent;
 import android.os.Bundle;

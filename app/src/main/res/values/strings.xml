@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">GuiaTuristica</string>
+    <string name="titulo_acerca_de">Acerca de</string>
+    <string name="texto_acerca_de">Guía Turística de Huánuco - Aplicación para explorar lugares turísticos y compartir reseñas.</string>
+    <string name="titulo_ayuda">Ayuda</string>
+    <string name="texto_ayuda">Explora lugares turísticos de Huánuco, revisa horarios, calificaciones y añade tus opiniones.</string>
+    <string name="titulo_detalle">Detalle del Lugar</string>
+    <string name="titulo_detalle_ejemplo">Ejemplo de Lugar Turístico</string>
+    <string name="menu_acerca_de">Acerca de</string>
+    <string name="menu_ayuda">Ayuda</string>
+    <string name="titulo_principal">Guía Turística Huánuco</string>
+    <string name="btn_ver_detalle">Ver Detalle</string>
+    <string name="titulo_login">Iniciar Sesión</string>
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="hint_clave">Contraseña</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_registrarse">Registrarse</string>
 </resources>
