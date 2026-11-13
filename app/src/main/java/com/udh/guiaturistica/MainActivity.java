@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.udh.guiaturistica.controller.AcercaDeActivity;
 import com.udh.guiaturistica.controller.AyudaActivity;
 import com.udh.guiaturistica.controller.DetalleActivity;
+import com.udh.guiaturistica.controller.LugaresGastronomicosActivity;
 import com.udh.guiaturistica.controller.LugaresTuristicosActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnLugaresNaturales = findViewById(R.id.btnLugaresNaturales);
 
         btnLugaresTuristicos.setOnClickListener(v -> startActivity(new Intent(this, LugaresTuristicosActivity.class)));
-        btnLugaresGastronomicos.setOnClickListener(v -> abrirPantalla(getString(R.string.titulo_lugares_gastronomicos)));
+        btnLugaresGastronomicos.setOnClickListener(v -> startActivity(new Intent(this, LugaresGastronomicosActivity.class)));
         btnLugaresNaturales.setOnClickListener(v -> abrirPantalla(getString(R.string.titulo_lugares_naturales)));
     }
 
