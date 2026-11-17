@@ -8,11 +8,10 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.appbar.MaterialToolbar;
 import com.udh.guiaturistica.controller.AcercaDeActivity;
 import com.udh.guiaturistica.controller.AyudaActivity;
-import com.udh.guiaturistica.controller.DetalleActivity;
-import com.udh.guiaturistica.controller.LugaresGastronomicosActivity;
-import com.udh.guiaturistica.controller.LugaresTuristicosActivity;
+import com.udh.guiaturistica.controller.LugaresActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,19 +20,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnLugaresTuristicos = findViewById(R.id.btnLugaresTuristicos);
-        Button btnLugaresGastronomicos = findViewById(R.id.btnLugaresGastronomicos);
-        Button btnLugaresNaturales = findViewById(R.id.btnLugaresNaturales);
+        MaterialToolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        btnLugaresTuristicos.setOnClickListener(v -> startActivity(new Intent(this, LugaresTuristicosActivity.class)));
-        btnLugaresGastronomicos.setOnClickListener(v -> startActivity(new Intent(this, LugaresGastronomicosActivity.class)));
-        btnLugaresNaturales.setOnClickListener(v -> abrirPantalla(getString(R.string.titulo_lugares_naturales)));
-    }
-
-    private void abrirPantalla(String titulo) {
-        Intent intent = new Intent(this, DetalleActivity.class);
-        intent.putExtra("titulo", titulo);
-        startActivity(intent);
+        Button btnVerLugares = findViewById(R.id.btnVerLugares);
+        btnVerLugares.setOnClickListener(v -> startActivity(new Intent(this, LugaresActivity.class)));
     }
 
     @Override
