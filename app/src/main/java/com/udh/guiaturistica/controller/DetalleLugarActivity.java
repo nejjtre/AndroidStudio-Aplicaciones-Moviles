@@ -75,7 +75,6 @@ public class DetalleLugarActivity extends AppCompatActivity {
         if (descripcion != null) tvDescripcion.setText(descripcion);
         if (imagenResId != 0) ivFoto.setImageResource(imagenResId);
 
-        // TextView dinámico para mostrar el resultado de la regla de negocio 3 (Promedio)
         tvResumenCalificacion = new TextView(this);
         tvResumenCalificacion.setTextSize(15);
         tvResumenCalificacion.setTypeface(null, Typeface.BOLD);
@@ -96,7 +95,6 @@ public class DetalleLugarActivity extends AppCompatActivity {
         boolean esEdicion = (resenaEnEdicion != null);
         int idActual = esEdicion ? resenaEnEdicion.getId() : -1;
 
-        // Validar mediante la capa de negocio
         String errorRegla = resenaService.validarResena(usuario, calificacion, comentario, actuales, esEdicion, idActual);
         if (errorRegla != null) {
             Toast.makeText(this, errorRegla, Toast.LENGTH_LONG).show();
@@ -104,7 +102,6 @@ public class DetalleLugarActivity extends AppCompatActivity {
         }
 
         if (esEdicion) {
-            // UPDATE en SQLite
             resenaEnEdicion.setUsuario(usuario);
             resenaEnEdicion.setCalificacion(calificacion);
             resenaEnEdicion.setComentario(comentario);
@@ -114,7 +111,6 @@ public class DetalleLugarActivity extends AppCompatActivity {
             btnPublicar.setText("Publicar reseña");
             Toast.makeText(this, "Reseña actualizada correctamente", Toast.LENGTH_SHORT).show();
         } else {
-            // CREATE en SQLite
             ResenaItem nuevaResena = new ResenaItem(nombreLugar, usuario, calificacion, comentario);
             resenaRepository.insertarResena(nuevaResena);
             Toast.makeText(this, R.string.msg_resena_publicada, Toast.LENGTH_SHORT).show();
@@ -144,7 +140,6 @@ public class DetalleLugarActivity extends AppCompatActivity {
                 .setTitle("Eliminar reseña")
                 .setMessage("¿Seguro que deseas eliminar la reseña de " + resena.getUsuario() + "?")
                 .setPositiveButton("Eliminar", (dialog, which) -> {
-                    // DELETE en SQLite
                     resenaRepository.eliminarResena(resena.getId());
                     if (resenaEnEdicion != null && resenaEnEdicion.getId() == resena.getId()) {
                         resenaEnEdicion = null;
