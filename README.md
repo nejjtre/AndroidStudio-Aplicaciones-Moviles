@@ -17,6 +17,8 @@ los archivos,carpetas,imagenes previamente agregadas al hacer la subida de archi
 
 $ git clone -b Dh-Alexander https://github.com/nejjtre/AndroidStudio-Aplicaciones-Moviles.git
 
+-->Hacer pull para usar la rama Dh-Alexander
+
 Dirigirse a la siguiente carpeta:
 $ cd AndroidStudio-Aplicaciones-Moviles/
 
