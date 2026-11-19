@@ -1,5 +1,4 @@
-Proyecto Guia turistico colaborativo proyectado a filtracion por busqueda,tipo de lugar y horario. Se propone
-implementar, agregar, editar y eliminar lugar turistico conjuntamente con la finalizacion del aplicativo.
+Aun no se descargan dependencias u otras descargas en el gradle.
 
 Debera de clonar el repositorio de la siguiente manera:
 
@@ -17,8 +16,6 @@ los archivos,carpetas,imagenes previamente agregadas al hacer la subida de archi
 3. Clonar el repositorio con los siguientes comandos(De la rama creada llamada Dh-Alexander):
 
 $ git clone -b Dh-Alexander https://github.com/nejjtre/AndroidStudio-Aplicaciones-Moviles.git
-
--->Hacer pull para usar la rama Dh-Alexander
 
 Dirigirse a la siguiente carpeta:
 $ cd AndroidStudio-Aplicaciones-Moviles/
@@ -45,3 +42,7 @@ Cómo ejecutarlo (botón Run y qué pantalla aparece primero).
 4. Módulos terminados
 Desarrollo del avance en la carpeta raiz y el archivo -> PLAN_DE_AVANCE.docx.
 
+Navegación entre pantallas con Intent y menú:
+- 3 botones funcionales
+;Primer boton funcional con ejemplos de Lugares turisticos agregados
+;Segundo boton en proceso
