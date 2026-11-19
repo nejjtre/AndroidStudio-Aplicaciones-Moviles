@@ -1,4 +1,5 @@
-Aun no se descargan dependencias u otras descargas en el gradle.
+Proyecto Guia turistico colaborativo proyectado a filtracion por busqueda,tipo de lugar y horario. Se propone
+implementar, agregar, editar y eliminar lugar turistico conjuntamente con la finalizacion del aplicativo.
 
 Debera de clonar el repositorio de la siguiente manera:
 
@@ -44,7 +45,3 @@ Cómo ejecutarlo (botón Run y qué pantalla aparece primero).
 4. Módulos terminados
 Desarrollo del avance en la carpeta raiz y el archivo -> PLAN_DE_AVANCE.docx.
 
-Navegación entre pantallas con Intent y menú:
-- 3 botones funcionales
-;Primer boton funcional con ejemplos de Lugares turisticos agregados
-;Segundo boton en proceso
