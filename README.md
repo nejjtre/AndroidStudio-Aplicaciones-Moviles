@@ -28,7 +28,7 @@ $ cd AndroidStudio-Aplicaciones-Moviles/
 Entramos a la plataforma git, viendo la rama Dh-Alexander, viendo los archivos con el comando "ls"
 
 ············································································································
-···································· ESTRUCTURA DEL PROYECTO ···············································
+                               ESTRUCTURA DEL PROYECTO 
 ············································································································
 1. Descripción del proyecto
 Qué hace la app y para quién es. En este caso, una guía turística con lugares, reseñas y roles de usuario. Escribe en 2 o 3 líneas qué ya funciona y qué falta, sin prometer lo que aún no tienes.
