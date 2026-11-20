@@ -1,48 +1,40 @@
-Aun no se descargan dependencias u otras descargas en el gradle.
+# Guía Turística Colaborativa - UDH
 
-Debera de clonar el repositorio de la siguiente manera:
+Aplicación móvil nativa en Android orientada a estudiantes, turistas y usuarios locales que buscan explorar sitios turísticos filtrando por nombre, categoría y disponibilidad horaria, además de consultar y gestionar reseñas comunitarias.
 
-·············· PASOS PARA CLONAR EL REPOSITORIO ····················
+### Estado actual del proyecto
+* **Funcional:** Navegación principal, catálogo de lugares con filtros combinados en tiempo real (búsqueda por texto, tipo de lugar y horario), persistencia local con base de datos SQLite interna (`guia_turistica_udh.db`), operaciones CRUD completas para reseñas (`ResenaRepository`) y pruebas unitarias sobre la lógica de negocio.
+* **En desarrollo (próxima entrega):** Implementación de la interfaz y lógica CRUD para agregar, editar y eliminar lugares turísticos desde el menú del catálogo (`menu_catalogo`), junto con el cierre de integración de roles de usuario.
 
-1. Crear carpeta(en cualquier lugar)
-   
--> Aquì se alojaran todos los archivos para ejecutar el proyecto contendra todos 
-los archivos,carpetas,imagenes previamente agregadas al hacer la subida de archivos.
+---
 
-2. Ingresar a esa carpeta mediante Git Bash(previamentet deberia tener instalada).
+## Tecnologías utilizadas
+* **Lenguaje:** Java
+* **IDE:** Android Studio
+* **Interfaz y componentes:** AndroidX (`RecyclerView`, `MaterialToolbar`, `SearchView`, `Spinner`, `AppCompat`)
+* **Base de datos local:** SQLite (`SQLiteOpenHelper`)
+* **Pruebas:** JUnit (pruebas unitarias en paquete `test`)
+* **SDK:** `minSdk` / `targetSdk` *(completar con los valores exactos de tu archivo `app/build.gradle`)*
 
-- Click izquierdo en la carpeta buscar "Open Git Bash here"
+---
 
-3. Clonar el repositorio con los siguientes comandos(De la rama creada llamada Dh-Alexander):
+## Estructura del proyecto
+* `app/src/main/java/com/udh/guiaturistica/` — Código fuente de las pantallas (`Activity`), adaptadores (`RecyclerView.Adapter`), modelos (`LugarItem`, `ResenaItem`) y capa de datos (`Database`, `ResenaRepository`).
+* `app/src/main/res/` — Diseños XML de pantallas (`layout`), menús de barra superior (`menu_principal`, `menu_catalogo`) y recursos gráficos.
+* `app/src/test/` — Pruebas unitarias para validar las reglas de negocio.
+* `PLAN_DE_AVANCE.docx` — Documentación detallada de los módulos terminados y el cronograma de desarrollo (ubicado en la carpeta raíz del repositorio).
 
-$ git clone -b Dh-Alexander https://github.com/nejjtre/AndroidStudio-Aplicaciones-Moviles.git
+---
 
-Dirigirse a la siguiente carpeta:
-$ cd AndroidStudio-Aplicaciones-Moviles/
+## Instalación y ejecución
 
-Entramos a la plataforma git, viendo la rama Dh-Alexander, viendo los archivos con el comando "ls"
+### Requisitos previos
+* **Android Studio** instalado (con SDK de Android configurado).
+* **Git** / Git Bash instalado en el equipo.
+* Un **emulador Android (AVD)** configurado o un dispositivo físico con depuración USB activada.
 
-············································································································
-···································· ESTRUCTURA DEL PROYECTO ···············································
-············································································································
-1. Descripción del proyecto
-Qué hace la app y para quién es. En este caso, una guía turística con lugares, reseñas y roles de usuario. Escribe en 2 o 3 líneas qué ya funciona y qué falta, sin prometer lo que aún no tienes.
-
-2. Tecnologías
-Lista lo que usas de verdad: Java, Android Studio, la versión de minSdk y targetSdk de tu build.gradle, y AndroidX
-
-3. Instalación y ejecución
-Pasos que otra persona pueda seguir sin preguntarte:
-
-Requisitos: Android Studio y un emulador.
-Cómo clonar el repositorio (git clone con la URL).
-Cómo abrirlo en Android Studio (carpeta raíz del proyecto).
-Cómo ejecutarlo (botón Run y qué pantalla aparece primero).
-
-4. Módulos terminados
-Desarrollo del avance en la carpeta raiz y el archivo -> PLAN_DE_AVANCE.docx.
-
-Navegación entre pantallas con Intent y menú:
-- 3 botones funcionales
-;Primer boton funcional con ejemplos de Lugares turisticos agregados
-;Segundo boton en proceso
+### 1. Clonar el repositorio
+1. Crea una carpeta vacía en tu computadora donde alojarás el proyecto.
+2. Haz **clic derecho** dentro de la carpeta y selecciona **Open Git Bash here**.
+3. Clona directamente la rama de desarrollo **Dh-Alexander** ejecutando:
+   git clone -b Dh-Alexander https://github.com/nejjtre/AndroidStudio-Aplicaciones-Moviles.git
